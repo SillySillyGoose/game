@@ -5,7 +5,8 @@
         "device": "*",
         "chase-the-pizza": "github:kiki-lee/chase-the-pizza",
         "animation": "*",
-        "arcade-character-animations": "github:microsoft/arcade-character-animations#v0.0.2"
+        "arcade-character-animations": "github:microsoft/arcade-character-animations#v0.0.2",
+        "pxt-raycasting": "github:aqeeaqee/pxt-raycasting#v0.3.18"
     },
     "files": [
         "main.blocks",

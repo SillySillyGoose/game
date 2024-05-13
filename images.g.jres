@@ -14,6 +14,11 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "fireball"
     },
+    "image4": {
+        "data": "hwQYABAAAAAAAPD/AAAAAADwz/IAAAAA/P8s8gAAAABMIi/yzAwAAEwkIvwswgAAwEQizCzCAAAATCzMIsIAAADALMwixP8AAMAiLEL0/w8AwCIsQvz/DwAvIixE//8PAC8iwiT/Ig8ALyIiIszMD/AsIiIi8sIP8EyyKSLy/wDPTBIpIvIAAM9MEiEi8gAALy8bISLyAAAvz5khIvIAAP/PmSsi8gAA/wCcKyIPAAAAAMAiIg8AAAAAACzyAAAAAAAAwA8AAAA=",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Pistol"
+    },
     "*": {
         "mimeType": "image/x-mkcd-f4",
         "dataEncoding": "base64",

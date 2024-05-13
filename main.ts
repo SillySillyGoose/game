@@ -1,5 +1,6 @@
 namespace SpriteKind {
     export const PlayerBorder = SpriteKind.create()
+    export const Gun = SpriteKind.create()
 }
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     mySprite.setImage(assets.image`fucking`)
@@ -12,15 +13,13 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSpr
     info.changeScoreBy(1)
     pizza.setPosition(randint(0, scene.screenWidth()), randint(0, scene.screenHeight()))
 })
-scene.onOverlapTile(SpriteKind.Player, assets.tile`transparency16`, function (sprite, location) {
-	
-})
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     game.setGameOverMessage(false, "your dead for some reason")
     game.gameOver(false)
 })
 let pizza: Sprite = null
 let mySprite: Sprite = null
+let Gun2 = sprites.create(assets.image`Pistol`, SpriteKind.Gun)
 let fireball = sprites.create(assets.image`fireball`, SpriteKind.Enemy)
 mySprite = sprites.create(assets.image`fucking bird`, SpriteKind.Player)
 pizza = sprites.create(img`
