@@ -1,0 +1,22 @@
+{
+    "image1": {
+        "data": "hwQQABAAAAAAAAAAu8sMAAAAAAC93csAAAAAAN3c3QwAAAAAXcXdywAAsLtb1dzNAAC7VVtV3M0AsFtVvVXbzQCw1dFVvdXNALAV/1VVVc2wu/W/RVVVxVu8VdVEVVXFtbBV3URVVbULANtERFVVuwAA8ExEW9ULAAAAALSwuwAAAAAACwAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "fucking bird"
+    },
+    "image2": {
+        "data": "hwQQABAAAAAAAAAACwAAAAAAAAC0sLsAAADwTERb1QsLANtERFVVu7WwVd1EVVW1W7xV1URVVcWwu/W/RVVVxQCwFf9VVVXNALDV0VW91c0AsFtVvVXbzQAAu1VbVdzNAACwu1vV3M0AAAAAXcXdywAAAADd3N0MAAAAAL3dywAAAAAAu8sMAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "fucking"
+    },
+    "image3": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAEREAAAAAAA0MyREAAAAMDMzMyIEAAA0MzMzI0IAADQzIyIzQgBANDMiIiIiBEBFIiJEJCIEQEUiQkREIgRARCJCREQiBABEEUJEREIAAEQRRUQkQgAAQFRVREIEAAAARERERAAAAAAAREQAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "fireball"
+    },
+    "*": {
+        "mimeType": "image/x-mkcd-f4",
+        "dataEncoding": "base64",
+        "namespace": "myImages"
+    }
+}
