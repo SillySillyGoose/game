@@ -5,21 +5,24 @@ namespace SpriteKind {
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     mySprite.setImage(assets.image`fucking`)
 })
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite2, otherSprite2) {
+    info.changeLifeBy(-1)
+    pause(1000)
+})
 controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     mySprite.setImage(assets.image`fucking bird`)
+})
+info.onLifeZero(function () {
+    game.setGameOverMessage(false, "your dead for some reason")
+    game.gameOver(true)
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
     info.startCountdown(5)
     info.changeScoreBy(1)
     pizza.setPosition(randint(0, scene.screenWidth()), randint(0, scene.screenHeight()))
 })
-sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
-    game.setGameOverMessage(false, "your dead for some reason")
-    game.gameOver(false)
-})
 let pizza: Sprite = null
 let mySprite: Sprite = null
-let Gun2 = sprites.create(assets.image`Pistol`, SpriteKind.Gun)
 let fireball = sprites.create(assets.image`fireball`, SpriteKind.Enemy)
 mySprite = sprites.create(assets.image`fucking bird`, SpriteKind.Player)
 pizza = sprites.create(img`
@@ -44,7 +47,6 @@ scene.setBackgroundColor(7)
 controller.moveSprite(mySprite)
 fireball.follow(mySprite, 50)
 fireball.setPosition(2, -1)
-game.setGameOverScoringType(game.ScoringType.HighScore)
 game.setGameOverEffect(false, effects.slash)
 mySprite.setStayInScreen(true)
 scene.setBackgroundImage(img`
@@ -169,6 +171,8 @@ scene.setBackgroundImage(img`
     3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
     3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
     `)
+info.changeLifeBy(-1)
+info.changeLifeBy(1)
 game.onUpdate(function () {
     characterAnimations.loopFrames(
     pizza,
